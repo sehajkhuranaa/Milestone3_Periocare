@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title> SIGN UP </title>
+    <link rel="stylesheet" type="text/css" href="style_signup.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <a href="homepage.html">
+                    <img src="logo.png">
+                </a>
+            </div>
+            <div class="signupbox">
+                <h1>Sign Up Now!</h1>
+                <h4>It's free and takes just a minute</h4>
+
+                <form>
+                    <label for="name">Username:</label>
+                    <input type="text" placeholder="" id="name">
+                    <label for="email">Email Id:</label>
+                    <input type="email" placeholder="" id="email">
+                    <label for="pass">Password:</label>
+                    <input type="password" placeholder="" id="pass">
+                    <label for="c_pass">Confirm Password:</label>
+                    <input type="password" placeholder="" id="c_pass">
+                    <div class="submit">
+                        <label for="submit"></label>
+                        <input type="button" value="Sign Up" id="submit" onclick="submitForm()">
+                    </div>
+                </form>
+                <p class="para_1">By clicking on the Sign Up button, you agree to our <br> <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>.</p>
+                <p class="para_2">Already an Existing User? <a href="login.html">Login Here</a></p>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        function submitForm() {
+            // Get form values
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("pass").value;
+            var confirmPassword = document.getElementById("c_pass").value;
+
+            // Validate form data
+            if (name === "" || email === "" || password === "" || confirmPassword === "") {
+                alert("Please fill in all fields");
+                return;
+            }
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match");
+                return;
+            }
+
+            // Create user object
+            var user = {
+                name: name,
+                email: email,
+                password: password
+            };
+            alert("User"+user.name+" has been successfully registered");
+
+            // Save user data to JSON file (replace with your own logic)
+            // Example: You can use the Fetch API to make a POST request to a server endpoint that handles saving the data
+            
+            
+            // Save user data to file (replace with your own logic)
+            // Example: You can use the fs module to write the data to a file
+            
+            
+        }
+    </script>
+</body>
+</html>

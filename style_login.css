@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    font-family: Baskerville Old Face;
+    background-attachment: fixed;
+}
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo img{
+    float: left;
+    width: 300px;
+    height:auto;
+}
+
+.loginbox{
+    width: 360px;
+    height: 280px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: transparent;
+    border-radius: 3px;
+}
+
+h1{
+    text-align: center;
+    padding-top: 30%;
+}
+
+form{
+    width: 300px;
+    margin-left: 20px;
+}
+
+form label{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+form input{
+    width: 320px;
+    height: 30px;
+    padding: 7px;
+    border: none;
+    border: 1px solid black;
+    border-radius: 30px;
+    outline: none;
+    background-color:cornsilk ;
+}
+
+input[type="button"]{
+    width: 320px;
+    height: 35px;
+    margin-top: 10px;
+    border: none    ;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    transition: 0.6s ease;
+    font-size: 20px;
+    font-family: Baskerville Old Face;
+}
+
+input[type="button"]:hover{
+    background-color: black;
+    color: white;
+}
+
+.remember{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.remember label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    border: 1px solid black;
+    background-color: cornsilk;
+    outline: none;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.remember label {
+    display: flex;
+    align-items: center;
+}
+
+.remember label input[type="checkbox"]:checked {
+    accent-color: black;
+}
+
+p{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 15px;
+}
+
+.para_3{
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+.para_3 a{
+    color: black;
+
+}
+
+.para_4{
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+.para_4 a{
+    color: black;
+
+}
